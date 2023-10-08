@@ -7,6 +7,7 @@ import Sidebar from './siderbar'
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 
 export default function MobileSidebar() {
+  // NOTE: hydration error対策
   const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
